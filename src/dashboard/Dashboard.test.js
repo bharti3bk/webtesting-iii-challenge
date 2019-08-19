@@ -10,4 +10,7 @@ describe('<Dashboard/>', () => {
   
       expect(tree).toMatchSnapshot();
     });
-  });  
+  });    
+
+
+  
