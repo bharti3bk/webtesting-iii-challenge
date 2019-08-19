@@ -7,12 +7,12 @@ import Display from "./Display";
 describe("<Display />", () => {
     it("Default state set to open and unlocked", () => {
       const { getByText } = render(<Display />);
-      // Check if unlocked and open are displayed on screen
+      // we will Check if unlocked and open are displayed on screen
       expect(getByText("Open"));
       expect(getByText("Unlocked"));
     });
     it("Accepting props", () => {
-      // Check if display component receives props and changes based off received props
+      // we will Check if display component receives props and changes based off received props
       const { getByText } = render(<Display locked={true} closed={true} />);
       expect(getByText("Closed"));
       expect(getByText("Locked"));
